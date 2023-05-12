@@ -1,1 +1,25 @@
 @use "variables" as var;
+
+.header__nav {
+  display: none;
+
+  &--visible {
+    display: block;
+  }
+}
+
+.header__nav-control {
+  display: none;
+
+  &--visible {
+    display: inline-block;
+  }
+}
+
+.header__nav-mobile {
+  display: none;
+
+  &--visible {
+    display: block;
+  }
+}
