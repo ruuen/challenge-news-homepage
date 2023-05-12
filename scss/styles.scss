@@ -1,5 +1,30 @@
 @use "variables" as var;
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em 1em 1em 1em;
+  gap: 1.75em;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  &__logo-wrapper {
+    max-width: 3rem;
+  }
+
+  &__logo {
+    max-width: 100%;
+    display: block;
+  }
+
+  &__burger-icon {
+    display: block;
+  }
+}
+
 .header__nav {
   display: none;
 
@@ -10,9 +35,13 @@
 
 .header__nav-control {
   display: none;
+  border: 0;
+  background: 0;
+  cursor: pointer;
+  padding: 0;
 
   &--visible {
-    display: inline-block;
+    display: block;
   }
 }
 
@@ -21,5 +50,11 @@
 
   &--visible {
     display: block;
+  }
+}
+
+.articles__featured {
+  &-img {
+    max-width: 100%;
   }
 }
