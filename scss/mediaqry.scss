@@ -1,1 +1,82 @@
 @use "variables" as var;
+
+@media (min-width: var.$breakpoint-desktop) {
+  html,
+  body {
+    min-height: 100vh;
+  }
+
+  //   .wrapper {
+  //     padding: 0;
+  //   }
+
+  .header__nav-control {
+    display: none;
+  }
+
+  .header__nav {
+    display: block;
+
+    &-list {
+      list-style: none;
+      padding-inline: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      gap: 2em;
+    }
+
+    &-link {
+      text-decoration: none;
+      color: var.$clr-grey-dark;
+      font-size: 0.9375rem;
+    }
+  }
+
+  .articles {
+    display: grid;
+    grid:
+      "featured featured new" 0.75fr
+      "popular popular popular" 0.25fr
+      / 0.33fr 0.33fr 0.33fr;
+    gap: 2em;
+  }
+
+  .articles__featured {
+    grid-area: featured;
+    display: grid;
+    grid:
+      "image image" 0.5fr
+      "title content" 0.5fr
+      / 0.5fr 0.5fr;
+
+    &-img-wrapper {
+      grid-area: image;
+    }
+
+    &-img {
+      max-height: 100%;
+      object-position: top;
+    }
+
+    &-title {
+      grid-area: title;
+      font-size: 3.5rem;
+      line-height: 3.5rem;
+    }
+
+    &-content {
+      grid-area: content;
+    }
+  }
+
+  .articles__new {
+    grid-area: new;
+  }
+
+  .articles__popular {
+    grid-area: popular;
+    flex-direction: row;
+  }
+}

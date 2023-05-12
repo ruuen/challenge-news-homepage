@@ -29,24 +29,16 @@
   }
 }
 
-.header__nav {
-  display: none;
-
-  &--visible {
-    display: block;
-  }
-}
-
 .header__nav-control {
-  display: none;
+  display: block;
   border: 0;
   background: 0;
   cursor: pointer;
   padding: 0;
+}
 
-  &--visible {
-    display: block;
-  }
+.header__nav {
+  display: none;
 }
 
 .header__nav-mobile {
@@ -137,6 +129,7 @@
   &-img {
     width: 100%;
     object-fit: cover;
+    display: block;
   }
 
   &-link {

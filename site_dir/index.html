@@ -29,7 +29,7 @@
         <div class="header__logo-wrapper">
           <img src="./images/logo.svg" alt="W" class="header__logo" />
         </div>
-        <button class="header__nav-control header__nav-control--visible">
+        <button class="header__nav-control">
           <img src="./images/icon-menu.svg" alt="Open page navigation" class="header__burger-icon" />
         </button>
         <nav class="header__nav">
@@ -43,25 +43,30 @@
         </nav>
       </header>
       <main class="articles">
-        <div class="articles__featured-new-group">
-          <article class="articles__featured">
-            <div class="articles__featured-img-wrapper">
-              <img
-                class="articles__featured-img"
-                src="./images/image-web-3-mobile.jpg"
-                alt="Computer rendering of shapes"
-              />
-            </div>
-            <h1 class="articles__featured-title">The Bright Future of Web 3.0?</h1>
-            <div class="articles__featured-content">
-              <p class="articles__featured-summary">
-                We dive into the next evolution of the web that claims to put the power of the platforms back into the
-                hands of the people. But is it really fulfilling its promise?
-              </p>
-              <a href="#" class="articles__featured-link">Read More</a>
-            </div>
-          </article>
-        </div>
+        <article class="articles__featured">
+          <div class="articles__featured-img-wrapper">
+            <!-- <img
+              class="articles__featured-img"
+              src="./images/image-web-3-mobile.jpg"
+              alt="Computer rendering of shapes"
+            /> -->
+            <img
+              class="articles__featured-img"
+              src="./images/image-web-3-mobile.jpg"
+              alt="Computer rendering of shapes"
+              srcset="./images/image-web-3-mobile.jpg 686w, ./images/image-web-3-desktop.jpg 1460w"
+              sizes="686w, (min-width: 1400px) 1460w"
+            />
+          </div>
+          <h1 class="articles__featured-title">The Bright Future of Web 3.0?</h1>
+          <div class="articles__featured-content">
+            <p class="articles__featured-summary">
+              We dive into the next evolution of the web that claims to put the power of the platforms back into the
+              hands of the people. But is it really fulfilling its promise?
+            </p>
+            <a href="#" class="articles__featured-link">Read More</a>
+          </div>
+        </article>
         <div class="articles__new">
           <h2 class="articles__new-heading">New</h2>
           <ul class="articles__new-list">
