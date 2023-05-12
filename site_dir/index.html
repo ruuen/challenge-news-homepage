@@ -11,6 +11,20 @@
   </head>
   <body>
     <div class="wrapper">
+      <nav class="header__nav-mobile" tabindex="-1">
+        <div class="header__nav-mobile-wrapper">
+          <button class="header__nav-mobile-control">
+            <img src="./images/icon-menu-close.svg" alt="Close page navigation" class="header__close-icon" />
+          </button>
+          <ul class="header__nav-mobile-list">
+            <li class="header__nav-mobile-item"><a href="#" class="header__nav-mobile-link">Home</a></li>
+            <li class="header__nav-mobile-item"><a href="#" class="header__nav-mobile-link">New</a></li>
+            <li class="header__nav-mobile-item"><a href="#" class="header__nav-mobile-link">Popular</a></li>
+            <li class="header__nav-mobile-item"><a href="#" class="header__nav-mobile-link">Trending</a></li>
+            <li class="header__nav-mobile-item"><a href="#" class="header__nav-mobile-link">Categories</a></li>
+          </ul>
+        </div>
+      </nav>
       <header class="header">
         <div class="header__logo-wrapper">
           <img src="./images/logo.svg" alt="W" class="header__logo" />
@@ -18,31 +32,25 @@
         <button class="header__nav-control header__nav-control--visible">
           <img src="./images/icon-menu.svg" alt="Open page navigation" class="header__burger-icon" />
         </button>
-        <div class="header__nav-mobile">
-          <button class="header__nav-mobile-control">
-            <img src="./images/icon-menu-close.svg" alt="Close page navigation" class="header__close-icon" />
-          </button>
-          <nav class="header__nav-mobile-list">
-            <li class="header__nav-mobile-item"><a href="#" class="header__nav-mobile-link">Home</a></li>
-            <li class="header__nav-mobile-item"><a href="#" class="header__nav-mobile-link">New</a></li>
-            <li class="header__nav-mobile-item"><a href="#" class="header__nav-mobile-link">Popular</a></li>
-            <li class="header__nav-mobile-item"><a href="#" class="header__nav-mobile-link">Trending</a></li>
-            <li class="header__nav-mobile-item"><a href="#" class="header__nav-mobile-link">Categories</a></li>
-          </nav>
-        </div>
         <nav class="header__nav">
-          <li class="header__nav-item"><a href="#" class="header__nav-link">Home</a></li>
-          <li class="header__nav-item"><a href="#" class="header__nav-link">New</a></li>
-          <li class="header__nav-item"><a href="#" class="header__nav-link">Popular</a></li>
-          <li class="header__nav-item"><a href="#" class="header__nav-link">Trending</a></li>
-          <li class="header__nav-item"><a href="#" class="header__nav-link">Categories</a></li>
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Home</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">New</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Popular</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Trending</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Categories</a></li>
+          </ul>
         </nav>
       </header>
       <main class="articles">
-        <section class="articles__featured-new-group">
+        <div class="articles__featured-new-group">
           <article class="articles__featured">
             <div class="articles__featured-img-wrapper">
-              <img src="./images/image-web-3-mobile.jpg" alt="Computer rendering of shapes" />
+              <img
+                class="articles__featured-img"
+                src="./images/image-web-3-mobile.jpg"
+                alt="Computer rendering of shapes"
+              />
             </div>
             <h1 class="articles__featured-title">The Bright Future of Web 3.0?</h1>
             <div class="articles__featured-content">
@@ -53,87 +61,86 @@
               <a href="#" class="articles__featured-link">Read More</a>
             </div>
           </article>
-          <div class="articles__new">
-            <h2 class="articles__new-heading">New</h2>
-            <ul class="articles__new-list">
-              <li class="articles__new-item">
-                <a href="#" class="articles__new-link">
-                  <h3 class="articles__new-title">Hydrogen VS Electric Cars</h3>
-                </a>
-                <p class="articles__new-summary">Will hydrogen-fueled cars ever catch up to EVs?</p>
-              </li>
-              <li class="articles__new-item">
-                <a href="#" class="articles__new-link">
-                  <h3 class="articles__new-title">The Downsides of AI Artistry</h3>
-                </a>
-                <p class="articles__new-summary">
-                  What are the possible adverse effects of on-demand AI image generation?
-                </p>
-              </li>
-              <li class="articles__new-item">
-                <a href="#" class="articles__new-link">
-                  <h3 class="articles__new-title">Is VC Funding Drying Up?</h3>
-                </a>
-                <p class="articles__new-summary">
-                  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-                </p>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="articles__popular-group">
-          <ul class="articles__popular-list">
-            <li class="articles__popular-item">
-              <div class="articles__popular-img-wrapper">
-                <img
-                  src="./images/image-retro-pcs.jpg"
-                  alt="A group of old retro computers"
-                  class="articles__popular-img"
-                />
-              </div>
-              <div class="articles__popular-content">
-                <span class="articles__popular-number">01</span>
-                <a href="#" class="articles__popular-link">
-                  <h4 class="articles__popular-title">Reviving Retro PCs</h4>
-                </a>
-                <p class="articles__popular-body">What happens when old PCs are given modern upgrades?</p>
-              </div>
+        </div>
+        <div class="articles__new">
+          <h2 class="articles__new-heading">New</h2>
+          <ul class="articles__new-list">
+            <li class="articles__new-item">
+              <a href="#" class="articles__new-link">
+                <h3 class="articles__new-title">Hydrogen VS Electric Cars</h3>
+              </a>
+              <p class="articles__new-summary">Will hydrogen-fueled cars ever catch up to EVs?</p>
             </li>
-            <li class="articles__popular-item">
-              <div class="articles__popular-img-wrapper">
-                <img
-                  src="./images/image-top-laptops.jpg"
-                  alt="Closeup of individual keys on a laptop keyboard"
-                  class="articles__popular-img"
-                />
-              </div>
-              <div class="articles__popular-content">
-                <span class="articles__popular-number">02</span>
-                <a href="#" class="articles__popular-link">
-                  <h4 class="articles__popular-title">Top 10 Laptops of 2022</h4>
-                </a>
-                <p class="articles__popular-body">Our best picks for various needs and budgets.</p>
-              </div>
+            <li class="articles__new-item">
+              <a href="#" class="articles__new-link">
+                <h3 class="articles__new-title">The Downsides of AI Artistry</h3>
+              </a>
+              <p class="articles__new-summary">
+                What are the possible adverse effects of on-demand AI image generation?
+              </p>
             </li>
-            <li class="articles__popular-item">
-              <div class="articles__popular-img-wrapper">
-                <img
-                  src="./images/image-gaming-growth.jpg"
-                  alt="Person's hand catching a game console controller"
-                  class="articles__popular-img"
-                />
-              </div>
-              <div class="articles__popular-content">
-                <span class="articles__popular-number">03</span>
-                <a href="#" class="articles__popular-link"
-                  ><h4 class="articles__popular-title">The Growth of Gaming</h4></a
-                >
-                <p class="articles__popular-body">How the pandemic has sparked fresh opportunities.</p>
-              </div>
+            <li class="articles__new-item">
+              <a href="#" class="articles__new-link">
+                <h3 class="articles__new-title">Is VC Funding Drying Up?</h3>
+              </a>
+              <p class="articles__new-summary">
+                Private funding by VC firms is down 50% YOY. We take a look at what that means.
+              </p>
             </li>
           </ul>
-        </section>
+        </div>
+        <ul class="articles__popular">
+          <li class="articles__popular-item">
+            <div class="articles__popular-img-wrapper">
+              <img
+                src="./images/image-retro-pcs.jpg"
+                alt="A group of old retro computers"
+                class="articles__popular-img"
+              />
+            </div>
+            <div class="articles__popular-content">
+              <span class="articles__popular-number">01</span>
+              <a href="#" class="articles__popular-link">
+                <h4 class="articles__popular-title">Reviving Retro PCs</h4>
+              </a>
+              <p class="articles__popular-body">What happens when old PCs are given modern upgrades?</p>
+            </div>
+          </li>
+          <li class="articles__popular-item">
+            <div class="articles__popular-img-wrapper">
+              <img
+                src="./images/image-top-laptops.jpg"
+                alt="Closeup of individual keys on a laptop keyboard"
+                class="articles__popular-img"
+              />
+            </div>
+            <div class="articles__popular-content">
+              <span class="articles__popular-number">02</span>
+              <a href="#" class="articles__popular-link">
+                <h4 class="articles__popular-title">Top 10 Laptops of 2022</h4>
+              </a>
+              <p class="articles__popular-body">Our best picks for various needs and budgets.</p>
+            </div>
+          </li>
+          <li class="articles__popular-item">
+            <div class="articles__popular-img-wrapper">
+              <img
+                src="./images/image-gaming-growth.jpg"
+                alt="Person's hand catching a game console controller"
+                class="articles__popular-img"
+              />
+            </div>
+            <div class="articles__popular-content">
+              <span class="articles__popular-number">03</span>
+              <a href="#" class="articles__popular-link"
+                ><h4 class="articles__popular-title">The Growth of Gaming</h4></a
+              >
+              <p class="articles__popular-body">How the pandemic has sparked fresh opportunities.</p>
+            </div>
+          </li>
+        </ul>
       </main>
     </div>
+    <script src="./main.js"></script>
   </body>
 </html>
