@@ -1,0 +1,15 @@
+{
+  "name": "news-homepage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass --watch --no-source-map scss/main.scss site_dir/main.css",
+    "build": "sass --no-source-map --style=compressed scss/main.scss site_dir/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.62.1"
+  }
+}
