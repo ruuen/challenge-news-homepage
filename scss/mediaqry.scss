@@ -1,5 +1,8 @@
 @use "variables" as var;
 
+@media (min-width: var.$breakpoint-tablet) {
+}
+
 @media (min-width: var.$breakpoint-desktop) {
   html,
   body {
@@ -9,6 +12,11 @@
   .wrapper {
     padding: 5em 10em 0em 10em;
     gap: 3.5em;
+  }
+
+  .header {
+    padding: 0;
+    position: relative;
   }
 
   .header__logo-wrapper {
