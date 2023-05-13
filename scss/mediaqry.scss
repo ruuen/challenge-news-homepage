@@ -7,13 +7,48 @@
       "featured new" 0.6fr
       "popular popular" 0.6fr/0.5fr 0.5fr;
     gap: 3.5em 2em;
+  }
 
-    &__featured {
-      grid-area: featured;
+  .articles__featured {
+    grid-area: featured;
+  }
+
+  .articles__new {
+    grid-area: new;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 1.25em 1.5em 1.25em;
+
+    &-heading {
+      font-size: 2.5rem;
     }
 
-    &__new {
-      grid-area: new;
+    &-list {
+      flex-grow: 1;
+
+      > .articles__new-item {
+        padding: 1.5em 0 0 0;
+
+        &:first-child {
+          padding: 0;
+        }
+
+        &:last-child {
+          padding: 1.5em 0 0 0;
+        }
+      }
+    }
+
+    &-item {
+      flex-grow: 1;
+    }
+
+    &-title {
+      font-size: clamp(1.25rem, 1.5vw, 2rem);
+    }
+
+    &-summary {
+      font-size: clamp(0.9375rem, 0.75vw, 1.5rem);
     }
   }
 
@@ -33,7 +68,6 @@
 
     &-img-wrapper {
       width: 100%;
-      // max-height: 25%;
     }
   }
 }
@@ -78,7 +112,6 @@
     &-link {
       text-decoration: none;
       color: var.$clr-grey-dark;
-      // font-size: 0.9375rem;
       font-size: clamp(0.9375rem, 0.8vw, 2rem);
 
       &:hover {
@@ -134,47 +167,6 @@
     }
   }
 
-  .articles__new {
-    grid-area: new;
-    display: flex;
-    flex-direction: column;
-    padding: 2em 1.25em 1.5em 1.25em;
-
-    &-heading {
-      font-size: 2.5rem;
-    }
-
-    &-list {
-      flex-grow: 1;
-
-      > .articles__new-item {
-        padding: 1.5em 0 0 0;
-
-        &:first-child {
-          padding: 0;
-        }
-
-        &:last-child {
-          padding: 1.5em 0 0 0;
-        }
-      }
-    }
-
-    &-item {
-      flex-grow: 1;
-    }
-
-    &-title {
-      font-size: clamp(1.25rem, 1.5vw, 2rem);
-      // font-size: 5vw;
-    }
-
-    &-summary {
-      // font-size: 0.75vw;
-      font-size: clamp(0.9375rem, 0.75vw, 1.5rem);
-    }
-  }
-
   .articles__popular {
     grid-area: popular;
     flex-direction: row;
@@ -214,10 +206,6 @@
 }
 
 @media (min-width: var.$breakpoint-desktop-1080) {
-  // .wrapper {
-  //   padding: 5em 10em 5em 10em;
-  // }
-
   .articles__featured {
     &-summary {
       padding: 0 0 2em 0;
