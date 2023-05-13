@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor]()
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/news-homepage-site-with-scss-VToeQ3mvk2)
 - Live Site URL: [Netlify](https://rd-challenge-news-homepage.netlify.app/)
 
 ## My process
@@ -56,6 +56,8 @@ Definitely need more time to practice `clamp()` but I think the usage on this si
 The 4k layout could use a little bit of work, I am getting used to designing for 4k in 50% zoom on my 2k monitor and it's hard to gauge whether users of 4k want extra space or huge text. Will need to do some reading and review other sites to hone this skill a bit.
 
 I think this site could look better with some more example content sections below the popular articles list. I want to revisit this challenge in future and flesh out the page a bit; maybe add more article sections & a page footer, then also style out some individual article pages with lorem ipsum text.
+
+Also need to optimise the images so that they're provided in .webp format and potentially reduce some points of CLS on mobile.
 
 ## Author
 
