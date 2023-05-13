@@ -80,6 +80,10 @@
       color: var.$clr-grey-dark;
       // font-size: 0.9375rem;
       font-size: clamp(0.9375rem, 0.8vw, 2rem);
+
+      &:hover {
+        color: var.$clr-red;
+      }
     }
   }
 
