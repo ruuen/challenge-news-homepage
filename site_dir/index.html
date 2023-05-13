@@ -76,7 +76,17 @@
       <main class="articles">
         <article class="articles__featured">
           <div class="articles__featured-img-wrapper">
-            <img
+            <picture>
+              <source
+                srcset="./images/image-web-3-desktop.jpg"
+                media="(min-width: 700px)"
+              />
+              <img
+                class="articles__featured-img"
+                src="./images/image-web-3-mobile.jpg"
+                alt="Computer rendering of shapes"
+              />
+              <!-- <img
               class="articles__featured-img"
               src="./images/image-web-3-mobile.jpg"
               alt="Computer rendering of shapes"
@@ -84,8 +94,9 @@
                 ./images/image-web-3-mobile.jpg   686w,
                 ./images/image-web-3-desktop.jpg 1460w
               "
-              sizes="686w, (min-width: 1400px) 1460w"
-            />
+              sizes="(max-width: 700px) 686w, (min-width: 1400px) 1460w"
+            /> -->
+            </picture>
           </div>
           <h1 class="articles__featured-title">
             The Bright Future of Web 3.0?
