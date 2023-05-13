@@ -13,12 +13,12 @@
 html,
 body {
   min-height: 100svh;
-  // min-height: -webkit-fill-available;
 }
 
 body {
   -webkit-font-smoothing: antialiased;
   font-family: var.$font-family-main;
+  background-color: var.$clr-offwhite;
 }
 
 p,

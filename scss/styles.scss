@@ -3,13 +3,16 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  padding: 1.75em 1em 4.5em 1em;
-  gap: 1.75em;
+  padding: 0 1em 4.5em 1em;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  padding: 1.75em 0;
+  background: var.$clr-offwhite;
 
   &__logo-wrapper {
     max-width: 3rem;
@@ -29,24 +32,16 @@
   }
 }
 
-.header__nav {
-  display: none;
-
-  &--visible {
-    display: block;
-  }
-}
-
 .header__nav-control {
-  display: none;
+  display: block;
   border: 0;
   background: 0;
   cursor: pointer;
   padding: 0;
+}
 
-  &--visible {
-    display: block;
-  }
+.header__nav {
+  display: none;
 }
 
 .header__nav-mobile {
@@ -137,6 +132,7 @@
   &-img {
     width: 100%;
     object-fit: cover;
+    display: block;
   }
 
   &-link {
@@ -228,6 +224,8 @@
 
   &-img {
     width: 100%;
+    height: 100%;
+    object-position: center;
     object-fit: cover;
     display: block;
   }
