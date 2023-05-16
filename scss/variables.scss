@@ -6,8 +6,7 @@
   font-style: normal;
   font-weight: 400;
   src: url("./fonts/inter-v12-latin-regular.woff2") format("woff2"),
-    /* Chrome 36+, Opera 23+, Firefox 39+ */
-      url("./fonts/inter-v12-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    /* Chrome 36+, Opera 23+, Firefox 39+ */ url("./fonts/inter-v12-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* inter-700 - latin */
 @font-face {
@@ -16,8 +15,7 @@
   font-style: normal;
   font-weight: 700;
   src: url("./fonts/inter-v12-latin-700.woff2") format("woff2"),
-    /* Chrome 36+, Opera 23+, Firefox 39+ */
-      url("./fonts/inter-v12-latin-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    /* Chrome 36+, Opera 23+, Firefox 39+ */ url("./fonts/inter-v12-latin-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* inter-800 - latin */
 @font-face {
@@ -26,8 +24,7 @@
   font-style: normal;
   font-weight: 800;
   src: url("./fonts/inter-v12-latin-800.woff2") format("woff2"),
-    /* Chrome 36+, Opera 23+, Firefox 39+ */
-      url("./fonts/inter-v12-latin-800.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    /* Chrome 36+, Opera 23+, Firefox 39+ */ url("./fonts/inter-v12-latin-800.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 // Fonts
@@ -47,8 +44,8 @@ $clr-blue-dark: #00001a;
 $clr-black: #000;
 
 // Breakpoints
-$breakpoint-tablet: 700px;
-$breakpoint-desktop: 1400px;
-$breakpoint-desktop-1080: 1800px;
-$breakpoint-desktop-2k: 2200px;
-$breakpoint-desktop-4k: 3000px;
+$breakpoint-tablet: 43.75em;
+$breakpoint-desktop: 65em;
+$breakpoint-desktop-1080: 112.5em;
+$breakpoint-desktop-2k: 137.5em;
+$breakpoint-desktop-4k: 187.5em;
