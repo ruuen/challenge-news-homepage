@@ -98,33 +98,36 @@
     max-width: none;
   }
 
-  // .header__nav-control {
-  //   display: none;
-  // }
+  .header__nav {
+    &-control {
+      &--open {
+        display: none;
+      }
 
-  // .header__nav {
-  //   display: block;
+      &--close {
+        display: none;
+      }
+    }
 
-  //   &-list {
-  //     list-style: none;
-  //     padding-inline: 0;
-  //     display: flex;
-  //     justify-content: center;
-  //     align-items: center;
-  //     height: 100%;
-  //     gap: 2em;
-  //   }
+    &-list {
+      display: flex;
+      padding: 0;
+      gap: 2.5em;
+    }
 
-  //   &-link {
-  //     text-decoration: none;
-  //     color: var.$clr-grey-dark;
-  //     font-size: clamp(0.9375rem, 0.8vw, 2rem);
+    &-link {
+      color: var.$clr-grey-dark;
+      font-size: clamp(0.9375rem, 0.8vw, 2rem);
+    }
+  }
 
-  //     &:hover {
-  //       color: var.$clr-red;
-  //     }
-  //   }
-  // }
+  // If screen expanded from mobile to desktop with menu open,
+  // This maintains padding of the nav items until close btn is pressed
+  .header__nav--mobile {
+    .header__nav-list {
+      padding: 5.25em 0 1.5em 1.5em;
+    }
+  }
 
   .articles {
     display: grid;
