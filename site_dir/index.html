@@ -15,9 +15,9 @@
         <div class="header__logo-wrapper">
           <img src="./images/logo.svg" alt="W News" class="header__logo" />
         </div>
-        <nav class="header__nav">
+        <nav id="nav" class="header__nav">
           <div class="header__nav-wrapper">
-            <button class="header__nav-control header__nav-control--open">
+            <button class="header__nav-control header__nav-control--open" aria-expanded="false" aria-controls="nav">
               <img src="./images/icon-menu.svg" alt="Open page navigation" class="header__burger-icon" />
             </button>
             <ul class="header__nav-list">
@@ -37,7 +37,7 @@
                 <a href="#" class="header__nav-link">Categories</a>
               </li>
             </ul>
-            <button class="header__nav-control header__nav-control--close">
+            <button class="header__nav-control header__nav-control--close" aria-expanded="false" aria-controls="nav">
               <img src="./images/icon-menu-close.svg" alt="Close page navigation" class="header__close-icon" />
             </button>
           </div>
