@@ -183,16 +183,6 @@
     }
   }
 
-  &-title {
-    font-size: 1.25rem;
-    font-weight: var.$font-weight-bold;
-    color: var.$clr-offwhite;
-
-    &:hover {
-      color: var.$clr-yellow;
-    }
-  }
-
   &-summary {
     color: var.$clr-grey;
     font-size: 0.9375rem;
@@ -202,17 +192,26 @@
 
   &-link {
     text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: var.$font-weight-bold;
+    color: var.$clr-offwhite;
+
+    &:hover {
+      color: var.$clr-yellow;
+    }
   }
 }
 
 .articles__popular {
-  list-style: none;
-  padding-inline: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
+  &-list {
+    list-style: none;
+    padding-inline: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
 
-  &-item {
+  &-article {
     display: flex;
   }
 
@@ -245,9 +244,6 @@
 
   &-link {
     text-decoration: none;
-  }
-
-  &-title {
     font-size: 1.125rem;
     line-height: 1.5rem;
     font-weight: var.$font-weight-bold;
