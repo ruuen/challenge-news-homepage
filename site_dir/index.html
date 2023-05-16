@@ -11,55 +11,36 @@
   </head>
   <body>
     <div class="wrapper">
-      <nav class="header__nav-mobile" tabindex="-1">
-        <div class="header__nav-mobile-wrapper">
-          <button class="header__nav-mobile-control">
-            <img src="./images/icon-menu-close.svg" alt="Close page navigation" class="header__close-icon" />
-          </button>
-          <ul class="header__nav-mobile-list">
-            <li class="header__nav-mobile-item">
-              <a href="#" class="header__nav-mobile-link">Home</a>
-            </li>
-            <li class="header__nav-mobile-item">
-              <a href="#" class="header__nav-mobile-link">New</a>
-            </li>
-            <li class="header__nav-mobile-item">
-              <a href="#" class="header__nav-mobile-link">Popular</a>
-            </li>
-            <li class="header__nav-mobile-item">
-              <a href="#" class="header__nav-mobile-link">Trending</a>
-            </li>
-            <li class="header__nav-mobile-item">
-              <a href="#" class="header__nav-mobile-link">Categories</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
       <header class="header">
         <div class="header__logo-wrapper">
-          <img src="./images/logo.svg" alt="W" class="header__logo" />
+          <img src="./images/logo.svg" alt="W News" class="header__logo" />
         </div>
-        <button class="header__nav-control">
-          <img src="./images/icon-menu.svg" alt="Open page navigation" class="header__burger-icon" />
-        </button>
         <nav class="header__nav">
-          <ul class="header__nav-list">
-            <li class="header__nav-item">
-              <a href="#" class="header__nav-link">Home</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#" class="header__nav-link">New</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#" class="header__nav-link">Popular</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#" class="header__nav-link">Trending</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#" class="header__nav-link">Categories</a>
-            </li>
-          </ul>
+          <div class="header__nav-wrapper">
+            <button class="header__nav-control header__nav-control--open">
+              <img src="./images/icon-menu.svg" alt="Open page navigation" class="header__burger-icon" />
+            </button>
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Home</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">New</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Popular</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Trending</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Categories</a>
+              </li>
+            </ul>
+            <button class="header__nav-control header__nav-control--close">
+              <img src="./images/icon-menu-close.svg" alt="Close page navigation" class="header__close-icon" />
+            </button>
+          </div>
         </nav>
       </header>
       <main class="articles">

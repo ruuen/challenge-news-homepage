@@ -98,33 +98,33 @@
     max-width: none;
   }
 
-  .header__nav-control {
-    display: none;
-  }
+  // .header__nav-control {
+  //   display: none;
+  // }
 
-  .header__nav {
-    display: block;
+  // .header__nav {
+  //   display: block;
 
-    &-list {
-      list-style: none;
-      padding-inline: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      gap: 2em;
-    }
+  //   &-list {
+  //     list-style: none;
+  //     padding-inline: 0;
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+  //     height: 100%;
+  //     gap: 2em;
+  //   }
 
-    &-link {
-      text-decoration: none;
-      color: var.$clr-grey-dark;
-      font-size: clamp(0.9375rem, 0.8vw, 2rem);
+  //   &-link {
+  //     text-decoration: none;
+  //     color: var.$clr-grey-dark;
+  //     font-size: clamp(0.9375rem, 0.8vw, 2rem);
 
-      &:hover {
-        color: var.$clr-red;
-      }
-    }
-  }
+  //     &:hover {
+  //       color: var.$clr-red;
+  //     }
+  //   }
+  // }
 
   .articles {
     display: grid;
