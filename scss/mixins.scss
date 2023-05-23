@@ -1,0 +1,9 @@
+// Add zero-width space as content of li's before psuedo element
+// This fixes Safari bug where list-style-type: none being enabled
+// causes screen readers to not announce list structure
+// Credit to Gerard K Cohen: https://gerardkcohen.me/writing/2017/voiceover-list-style-type.html
+@mixin list-item-screenreader-fix {
+  &::before {
+    content: "\200B";
+  }
+}

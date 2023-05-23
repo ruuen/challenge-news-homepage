@@ -27,14 +27,14 @@
       flex-grow: 1;
 
       > .articles__new-item {
-        padding: 1.5em 0 0 0;
+        padding: 0.75em 0;
 
         &:first-child {
-          padding: 0;
+          padding: 0 0 0.75em;
         }
 
         &:last-child {
-          padding: 1.5em 0 0 0;
+          padding: 0.75em 0 0 0;
         }
       }
     }
@@ -43,7 +43,7 @@
       flex-grow: 1;
     }
 
-    &-title {
+    &-link {
       font-size: clamp(1.25rem, 1.5vw, 2rem);
     }
 
@@ -56,9 +56,16 @@
     grid-area: popular;
     flex-direction: row;
 
+    &-list {
+      flex-direction: row;
+    }
+
     &-item {
-      flex-direction: column;
       flex-basis: 33%;
+    }
+
+    &-article {
+      flex-direction: column;
     }
 
     &-content {
@@ -79,44 +86,46 @@
   }
 
   .wrapper {
-    padding: 5em 10em 0em 10em;
+    padding: min(6vw, 5.5em) min(10vw, 10em) 0 min(10vw, 10em);
     gap: 3.5em;
   }
 
   .header {
     padding: 0;
-    position: relative;
   }
 
   .header__logo-wrapper {
     max-width: none;
   }
 
-  .header__nav-control {
-    display: none;
-  }
-
   .header__nav {
-    display: block;
+    &-control {
+      &--open {
+        display: none;
+      }
+
+      &--close {
+        display: none;
+      }
+    }
 
     &-list {
-      list-style: none;
-      padding-inline: 0;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      gap: 2em;
+      padding: 0;
+      gap: 2.5em;
     }
 
     &-link {
-      text-decoration: none;
       color: var.$clr-grey-dark;
       font-size: clamp(0.9375rem, 0.8vw, 2rem);
+    }
+  }
 
-      &:hover {
-        color: var.$clr-red;
-      }
+  // If screen expanded from mobile to desktop with menu open,
+  // This maintains padding of the nav items until close btn is pressed
+  .header__nav--mobile {
+    .header__nav-list {
+      padding: 5.25em 0 1.5em 1.5em;
     }
   }
 
@@ -168,24 +177,25 @@
   }
 
   .articles__popular {
-    grid-area: popular;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 1em;
-    max-height: 8rem;
+    &-list {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 1em;
+      max-height: 8rem;
+    }
 
-    &-item {
+    &-article {
       flex-direction: row;
     }
 
     &-img-wrapper {
-      height: 100%;
+      max-height: 100%;
       width: 30%;
-      max-height: none;
     }
 
     &-content {
       padding: 0 0.5em 0 1em;
+      width: 70%;
     }
 
     &-number {
