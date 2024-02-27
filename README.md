@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/news-homepage-site-with-scss-VToeQ3mvk2)
-- Live Site URL: [Netlify](https://rd-challenge-news-homepage.netlify.app/)
+- Live Site URL: [Cloudflare Pages](https://mbr-challenge-news-homepage.pages.dev/)
 
 ## My process
 
@@ -61,5 +61,5 @@ Also need to optimise the images so that they're provided in .webp format and po
 
 ## Author
 
-- Frontend Mentor - [@ruuendigital](https://www.frontendmentor.io/profile/ruuendigital)
+- Frontend Mentor - [@ruuen](https://www.frontendmentor.io/profile/ruuen)
 - Twitter - [@maxruuen](https://www.twitter.com/maxruuen)
